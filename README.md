@@ -5,9 +5,9 @@ Angular Phonebook
 - Angular app without reload
 - Data storage into webbrowser cache using ngStorage
 
-Technical stack:
--Angular 1.6  
--Bootstrap 4
--Font Awesome 5
--Jquery
--ngStorage
+Technical stack
+- Angular 1.6  
+- Bootstrap 4
+- Font Awesome 5
+- Jquery
+- ngStorage
