@@ -1,0 +1,46 @@
+body{
+	background-color: black;
+}
+.phonebook-thumbnail{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+table tr{
+	text-align: center; 
+  vertical-align: middle;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+    .container,
+    .container-fluid{
+    	padding: 0px;
+    	background-color: black !important;
+    }
+    .custom-button-row button{
+    	margin-top: .5rem
+    }
+}
+@media (min-width: 991px) {
+	.contact-edit-block .contact-edit-full-avatar{
+		padding: 50px;
+	}
+}
+
+.contact-view-block i{
+	padding-top: 4px;
+	margin-right: 5px;
+}
+.contact-edit-block .custom-button,
+.contact-view-block .custom-button{
+	margin: 0px 5px;
+}
+
+.contact-list-block .custom-button{
+	margin:10px 0px;
+}
+
+[data-href] {
+    cursor: pointer;
+}

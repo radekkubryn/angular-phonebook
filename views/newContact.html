@@ -1,0 +1,64 @@
+<div class="container contact-edit-block" ng-controller="phoneBookControllerNewContact">
+    <div class="col-xl-12 col-lg-12 col-md-12">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="p-4">
+                             <div class="text-center">
+                                <h1 class="h4 text-gray-900 mb-4">{{newContact.name}}</h1>
+                            </div>
+                            <hr>
+                            <form>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" ng-model="newContact.name" placeholder="Enter contact name">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" ng-model="newContact.phone" placeholder="Enter phone number">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="far fa-envelope-open"></i></span>
+                                    </div>
+                                    <input type="email" class="form-control" ng-model="newContact.email" placeholder="Enter email address">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-birthday-cake"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" ng-model="newContact.birthday" placeholder="Enter birthday date">
+                                </div>
+                                <div class="form-group input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control" ng-model="newContact.avatar" placeholder="Enter avatar url or leave empty to generate random">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <button ng-click="saveContact();" class="btn btn-success btn-lg btn-block d-block d-sm-block d-md-block d-lg-none d-xl-none float-right">
+            <i class="fas fa-user-edit"></i> Save
+        </button>
+        <button back class="btn btn-light btn-lg btn-block d-block d-sm-block d-md-block d-lg-none d-xl-none float-right">
+            <i class="fas fa-arrow-circle-left"></i> Back
+        </button>
+        <button ng-click="saveContact();" class="btn btn-success btn-lg d-none d-lg-block float-right custom-button">
+            <i class="fas fa-user-edit"></i> Save
+        </button>
+        <button back class="btn btn-light btn-lg d-none d-lg-block float-right custom-button">
+            <i class="fas fa-arrow-circle-left"></i> Back
+        </button>
+    </div>
+</div>
